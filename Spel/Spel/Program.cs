@@ -17,6 +17,8 @@ namespace Spel
 
             //HEJ THEO
 >>>>>>> 8fcccedb13b4d04fbc97d2b82381f4694736f341
+
+    //hej harald
         }
     }
 }
