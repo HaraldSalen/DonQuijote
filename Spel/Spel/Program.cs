@@ -8,17 +8,39 @@ namespace Spel
     class Program
     {
         static void Main(string[] args)
-<<<<<<< HEAD
-        { 
-
-            //hiihihi
-=======
         {
 
-            //HEJ THEO
->>>>>>> 8fcccedb13b4d04fbc97d2b82381f4694736f341
+            do
+            {
+                Console.WriteLine("\nWelcome, press enter to continue.");
+            } while (Console.ReadKey().Key != ConsoleKey.Enter);
 
-    //hej harald
+            Console.WriteLine("\nhej");
+
+
+            Console.WriteLine("\nVälj karaktär...\n1. Don Quijote\n2. Sanchez");
+            int svar1 = int.Parse(Console.ReadLine());
+
+
+                if (svar1 == 11)
+                {
+
+                    Console.WriteLine("\nDu valde Don Quijote");
+
+                }
+                else if (svar1 == 22)
+                {
+
+                    Console.WriteLine("\nDu valde Sanchez");
+
+                }
+         
+
+                Console.ReadKey();
+
+
+
+            }
         }
     }
-}
+
