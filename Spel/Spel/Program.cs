@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,40 +8,40 @@ namespace Spel
 {
     class Program
     {
+        public static EventHandlerr eventHandler = new EventHandlerr();
+        public static Event currentEvent = eventHandler.getEventWithThisName("start");
+
+        public static int mynt = Globals.guldmynt;
+       
+
+
         static void Main(string[] args)
         {
-
-            do
+            
+            Console.WriteLine("###### START");
+            currentEvent = eventHandler.getEventWithThisName("start");
+            while (true)
             {
-                Console.WriteLine("\nWelcome, press enter to continue.");
-            } while (Console.ReadKey().Key != ConsoleKey.Enter);
-
-            Console.WriteLine("\nhej");
-
-
-            Console.WriteLine("\nVälj karaktär...\n1. Don Quijote\n2. Sanchez");
-            int svar1 = int.Parse(Console.ReadLine());
-
-
-                if (svar1 == 11)
-                {
-
-                    Console.WriteLine("\nDu valde Don Quijote");
-
-                }
-                else if (svar1 == 22)
-                {
-
-                    Console.WriteLine("\nDu valde Sanchez");
-
-                }
-         
-
-                Console.ReadKey();
-
-
-
+                writeS("Antal guldmynt: " + mynt);
+                writeS("\n"+currentEvent.question);
+                string answer = Console.ReadLine();
+                string nextEvent = currentEvent.getNextEvent(answer);
+                currentEvent = eventHandler.getEventWithThisName(nextEvent);
+                
+                mynt++;
+                
             }
         }
+        private static void writeS(string text)
+        {
+            Console.WriteLine(text);
+        }
+        private static void writeI(int tal)
+        {
+            Console.WriteLine(tal);
+        }
+
+        
     }
+}
 
