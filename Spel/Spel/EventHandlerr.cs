@@ -24,12 +24,12 @@ namespace Spel
             ev = new Event(
                 "start", //name
                 "Du står vid en grotta vad gör du?\n1. Går in\n2. Spring till flygplatsen",
-                "1",    //svar1
+                "1. Gå in i grottan.",    //svar1
                 "Grottan",
                 "2",   //svar2
                 "flygplatsen");
             allEvents.Add("start", ev);
-
+            
             ev = new Event(
                "flygplatsen", //name
                "Du står vid en flygplats vad gör du?\n1. Går in\n2. Stanna\n3. <Gå tillbaka>", //question

@@ -8,11 +8,10 @@ namespace Spel
 {
     class Event
     {
-
         public static int mynt = Globals.guldmynt;
         public string name;
         public string question;
-        public string answer1;
+        public string answer1; 
         public string eventName1;
         public string answer2;
         public string eventName2;
@@ -106,6 +105,11 @@ namespace Spel
             {   
                 
                 return eventName3;
+            }
+            if (answer == answer4) {
+                return eventName4;
+                
+            
             }
             
                 return "hittade inget event";
