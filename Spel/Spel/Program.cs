@@ -6,28 +6,26 @@ using System.Text;
 
 namespace Spel
 {
+    // av Harald Salén och Theodor Brandt
     class Program
     {
         public static EventHandlerr eventHandler = new EventHandlerr();
         public static Event currentEvent = eventHandler.getEventWithThisName("start");
 
-
-
         static void Main(string[] args)
         {
-
             Console.WriteLine("###### START");
             currentEvent = eventHandler.getEventWithThisName("start");
             while (true)
             {
-                
-                
                 string answer = getAnswerFromQuestion();
                 string nextEvent = currentEvent.getNextEvent(answer);
+                if (nextEvent == null)
+                {
+                    continue;
+                }
                 currentEvent = eventHandler.getEventWithThisName(nextEvent);
                 Console.Clear();
-                Globals.guldmynt++;
-
             }
         }
 
@@ -37,15 +35,12 @@ namespace Spel
             do
             {
                 
-                if (currentEvent == null)
-                {
-                    writeS("current event == null");
-                }
                 Console.Clear();
+             
                 writeS("\n********************************************************************************");
-                writeS("\n\t Plats: " + currentEvent.name + "\t Antal guldmynt: " + Globals.guldmynt + "\n");
-                
-                writeS("\n " + currentEvent.question);
+                writeS("\n\tPlats: " + currentEvent.name + "\n");
+                writeS(currentEvent.toString());
+
                 writeS("\n********************************************************************************\n ");
                 answer = Console.ReadLine();
             } while (!isCorrectAnswer(answer));
@@ -54,23 +49,20 @@ namespace Spel
 
         private static bool isCorrectAnswer(string answer)
         {
-            if (answer == currentEvent.answer1)
+            if (answer == currentEvent.getAnswer1Number())
+            {
+                
+                return true;
+            }
+            if (answer == currentEvent.getAnswer2Number())
             {
                 return true;
             }
-            if (answer == currentEvent.answer2)
+            if (answer == currentEvent.getAnswer3Number())
             {
                 return true;
             }
-            if (answer == currentEvent.answer3)
-            {
-                return true;
-            }
-            if (answer == currentEvent.answer4)
-            {
-                return true;
-            }
-
+            Console.WriteLine("isCorrectAnswer: ERROR");
             return false;
 
         }
