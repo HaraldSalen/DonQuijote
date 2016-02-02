@@ -3,3 +3,8 @@ C:\Users\harald\Documents\DonQuijote\Spel\Spel\bin\Debug\Spel.pdb
 C:\Users\harald\Documents\DonQuijote\Spel\Spel\obj\x86\Debug\Spel.exe
 C:\Users\harald\Documents\DonQuijote\Spel\Spel\obj\x86\Debug\Spel.pdb
 C:\Users\harald\Documents\DonQuijote\Spel\Spel\obj\x86\Debug\Spel.csprojResolveAssemblyReference.cache
+C:\Users\theodor.afgeijersta\Documents\GitHub\DonQuijote\Spel\Spel\obj\x86\Debug\Spel.exe
+C:\Users\theodor.afgeijersta\Documents\GitHub\DonQuijote\Spel\Spel\obj\x86\Debug\Spel.pdb
+C:\Users\theodor.afgeijersta\Documents\GitHub\DonQuijote\Spel\Spel\bin\Debug\Spel.exe
+C:\Users\theodor.afgeijersta\Documents\GitHub\DonQuijote\Spel\Spel\bin\Debug\Spel.pdb
+C:\Users\theodor.afgeijersta\Documents\GitHub\DonQuijote\Spel\Spel\obj\x86\Debug\Spel.csprojResolveAssemblyReference.cache
