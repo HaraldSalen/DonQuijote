@@ -45,8 +45,7 @@ namespace Spel
 
             ev = new Event(
                "Värdshuset", //name
-               "Alonso kommer fram till ett värdshus där han ber värdshusherren dubba honom till riddare. Han går med på att dubba dig och alla i värdshuset spelar med, även två flickor som Alonso tror är adelsdamer. \nEn riddare som du behöver en dam att beundra på avstånd, det är till denna dams ära du utför dina bedrifter. Du väljer flickan Dulcinea från den närliggande byn El Tobso. \nEfter dubbningsritualen sätter du dig på din häst och beger dig ut i världen, denna gång som riddare! Du rider iväg i galopp mot den närliggande byn... ",
-                //               "Alonso kommer fram till ett värdshus där han ber värdhusherren dubba honom till riddare, han går med på att dubba dig och alla i värdhuset spelar med, även två flickor som Alonso tror är adeldamer.\n\n\n\nEn riddare som du behöver ha en dam att  beundra på avstånd, det är till denna dams ära du utför dina bedrifter. Du väljer Dulcinea från den närliggande byn El Tobso.\n\n\n\nEfter dubbningsritualen sätter du dig på din häst och begär dig iväg ut i världen, denna gång som en riddare. Du rider iväg i galopp mot den närliggande byn… ",//question
+               "Alonso kommer fram till ett värdshus där han ber värdshusherren dubba honom till riddare. Han går med på att dubba dig och alla i värdshuset spelar med, även två flickor som Alonso tror är adelsdamer.ff\nEn riddare som du behöver en dam att beundra på avstånd, det är till denna dams ära du utför dina bedrifter. Du väljer flickan Dulcinea från den närliggande byn El Tobso. \nEfter dubbningsritualen sätter du dig på din häst och beger dig ut i världen, denna gång som riddare! Du rider iväg i galopp mot den närliggande byn:",
                "1. Lapíce",    //svar1
                "Lapíce",//eventname1
                "2. Montiel",   //svar2
@@ -127,7 +126,7 @@ namespace Spel
 
             ev = new Event(
               "Hembyn", //name
-              "Du frågar du din snälla granne Sancho om han vill vara din väpnare och följa med under nästa resa. Han svarar att han gärna vill hjälpa till för en mindre ersättning: en egen ö.\n\n\n\nSancho är enfaldig och tror på ditt löfte och lovar att följa med som din väpnare under dina resor.",//question
+              "Du frågar din snälla granne Sancho om han vill vara din väpnare och följa med under nästa resa. Hans svarar att han gärna vill hjälpa till för en mindre ersättning: en egen ö.\nSancho är enfaldig och tror på ditt löfte och lovar att följa med som din väpnare under dina resor.", //question
               "1. Sadla upp på hästen och bege dig ut på nästa resa tillsammans med din nya väpnare Sancho.", //svar1
               "resa2"); //eventname1
             allEvents.Add("LetaVäpnare", ev);
