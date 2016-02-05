@@ -165,7 +165,7 @@ namespace Spel
             
             ev = new Event(
               "Hemma", //name
-              "Med hjälmen i din hand och klädd i din rustning betraktar du dig själv framför spegeln. “Tänka sig. Jag, Alonso Quijana, en riddare.” Du ser dig själv resandes över världens alla landskap, utför kungens hjältemodiga uppdrag, slåss mot vedervärdiga monster och räddar den stackars prinsessa som sitter fast i tornet på slottet som ligger blott i fjärran. Allt med din väpnare vid din sida. Men vänta lite nu. Väpnare? Just det, en riddare behöver en väpnare.",//question
+              "Än en riddarhistoria över och än en hjältemodig riddare som tagit sig an alla möjliga hinder och väsen för att rädda sin gunstling. Tyst tänker den oansenliga Adelsmannen, Alonso Quijana, för sig självt. Hur skulle det vara att ge sig ut i världen så som dessa riddare? Vad krävs det för att bli som dom? Han sätter sig upp, rakryggad, i den slitna fåtöljen och vrider sitt huvud långsamt för att snegla på andra sidan sällskapsrummet där den rostiga rustningen står med en smärre ståtlighet i jämförelse med dess främsta år. En tanke slog honom. “Tänk om allt jag behöver finns rakt framför mina ögon?”\n\nMed hjälmen i din hand och klädd i din rustning betraktar du dig själv framför spegeln. “Tänka sig. Jag, Alonso Quijana, en riddare.” Du ser dig själv resandes över världens alla landskap, utför kungens hjältemodiga uppdrag, slåss mot vedervärdiga monster och räddar den stackars prinsessa som sitter fast i tornet på slottet som ligger blott i fjärran. Allt med din väpnare vid din sida. Men vänta lite nu. Väpnare? Just det, en riddare behöver en väpnare.",//question
               "1. Gå vidare", //svar1
               "1, 1, 1");//eventname1
             allEvents.Add("1, 1", ev);
@@ -549,13 +549,13 @@ namespace Spel
               "", //name
               "",//question
               "1. ", //svar1
-              "",//eventname1
+              "hej",//eventname1
               "2. ",   //svar2
               ""); //eventname2
             allEvents.Add("", ev);
 
             ev = new Event(
-              "", //name
+              "hej", //name
               "",//question
               "1. ", //svar1
               "",//eventname1
@@ -585,7 +585,7 @@ namespace Spel
             {
                 writeS("Found no event with name"+name);
             }
-            //Console.WriteLine("ev=" + e);
+            
             return e;
         } 
         private static void writeS(string text)

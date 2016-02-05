@@ -132,7 +132,7 @@ namespace Spel
                 return firstLine;
             }
             return text;
-            //Console.WriteLine(firstLine);
+            
 
 
         }
